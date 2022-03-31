@@ -8,6 +8,20 @@ body{
     background-repeat: no-repeat;
     background-position-y: -100px;
 }
+.quartos a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    padding: 20px 10px;
+}
+.quartos a:hover{
+    background: #2E8B57;
+}
+.quartos .final-a:hover{
+    background: #2E8B57;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
 header{
     background: #4F4F4F;
     color: white;
@@ -52,6 +66,22 @@ h1{
 }
 li{
     list-style: none;
+    border-bottom: 2px solid #2E8B57	;
+    margin-top: 0px;
+}
+.quartos{
+    position: relative;
+    top: -190px;
+    background: #3CB371;
+    transition: .5s;
+    z-index: -1;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
 }
 .pavilhoes{
     width: 300px;
@@ -63,11 +93,11 @@ li{
     background: #4F4F4F;
     color: white;
 }
-#pavilhao1{
-    background-color: red;
+.pavilhao{
+    height: 100px;
+    border-radius: 30px;
 }
-
-#pavilhao1:hover > .quartos{
-    margin-top: 10px;
+.pavilhao:hover > .quartos{
+    margin-top: 175px;
     color: white;
 }
