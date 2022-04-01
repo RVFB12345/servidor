@@ -8,15 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="header">
+        <a id="logo" class="a-header" href="">InternOut</a>
+        <nav id="nav">
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false" onclick="toggleMenu()">Menu
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li class="li-header"><a class="a-header" href="/">Contato</a></li>
+            <li class="li-header"><a class="a-header" href="/">Sobre</a></li>
+            <li class="li-header"><a class="a-header" href="/">Cadastrar</a></li>
+          </ul>
+        </nav>
+      </header>
+    <header id="header2">
         <div id="user">
             <span id="imgUser"><a href=""><img width="50px" src="https://www.pngplay.com/wp-content/uploads/12/User-Avatar-Profile-Download-Free-PNG.png" alt=""></a></span>
         <p id="usuario">Usuário</p>
         </div>
-        <p id="servidor">Servidor</p>
-        <a id="link" href="https://github.com/RVFB12345/servidor">
-            <button id="btn-cad">Cadastrar Aluno</button>
-        </a>
     </header>
     <h1>Internato 2022</h1>
     <div id="container">
@@ -29,7 +38,7 @@
                   <li>
                     <a href="">Quarto 1.2</a>
                 </li>
-                <li>
+                <li class="li-final">
                     <a class="final-a" href="">Quarto 1.3</a>
                 </li>
               </ul>
@@ -44,8 +53,8 @@
                 <li>
                   <a href="#">Quarto 2.2</a>
               </li>
-              <li>
-                  <a class="final-a" href="#">Quarto 2,3</a>
+              <li class="li-final">
+                  <a class="final-a" href="#">Quarto 2.3</a>
               </li>
             </ul>
           </nav>
@@ -59,7 +68,7 @@
                 <li>
                   <a href="">Quarto 3.2</a>
               </li>
-              <li>
+              <li class="li-final">
                   <a class="final-a" href="">Quarto 3.3</a>
               </li>
             </ul>
